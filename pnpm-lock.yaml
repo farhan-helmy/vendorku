@@ -4,6 +4,7 @@ specifiers:
   '@vitejs/plugin-vue': ^3.0.0
   '@vueuse/head': ^0.7.6
   autoprefixer: ^10.4.7
+  chart.js: ^3.8.0
   daisyui: ^2.19.0
   pinia: ^2.0.16
   postcss: ^8.4.14
@@ -13,11 +14,13 @@ specifiers:
   vite-plugin-vue-layouts: ^0.6.0
   vite-ssg: ^0.20.2
   vue: ^3.2.37
+  vue-chartjs: ^4.1.1
   vue-router: ^4.1.2
 
 dependencies:
   '@vueuse/head': 0.7.6_vue@3.2.37
   autoprefixer: 10.4.7_postcss@8.4.14
+  chart.js: 3.8.0
   daisyui: 2.19.0_ugi4xkrfysqkt4c4y6hkyfj344
   pinia: 2.0.16_vue@3.2.37
   postcss: 8.4.14
@@ -26,6 +29,7 @@ dependencies:
   vite-plugin-vue-layouts: 0.6.0_i5f576xweswtg2nbfti5sqkk7q
   vite-ssg: 0.20.2_bc535nzjtcqlryzrekyvursaoq
   vue: 3.2.37
+  vue-chartjs: 4.1.1_chart.js@3.8.0+vue@3.2.37
   vue-router: 4.1.2_vue@3.2.37
 
 devDependencies:
@@ -326,6 +330,10 @@ packages:
 
   /caniuse-lite/1.0.30001367:
     resolution: {integrity: sha512-XDgbeOHfifWV3GEES2B8rtsrADx4Jf+juKX2SICJcaUhjYBO3bR96kvEIHa15VU6ohtOhBZuPGGYGbXMRn0NCw==}
+    dev: false
+
+  /chart.js/3.8.0:
+    resolution: {integrity: sha512-cr8xhrXjLIXVLOBZPkBZVF6NDeiVIrPLHcMhnON7UufudL+CNeRrD+wpYanswlm8NpudMdrt3CHoLMQMxJhHRg==}
     dev: false
 
   /chokidar/3.5.3:
@@ -1922,6 +1930,16 @@ packages:
       rollup: 2.77.0
     optionalDependencies:
       fsevents: 2.3.2
+
+  /vue-chartjs/4.1.1_chart.js@3.8.0+vue@3.2.37:
+    resolution: {integrity: sha512-rKIQ3jPrjhwxjKdNJppnYxRuBSrx4QeM3nNHsfIxEqjX6QS4Jq6e6vnZBxh2MDpURDC2uvuI2N0eIt1cWXbBVA==}
+    peerDependencies:
+      chart.js: ^3.7.0
+      vue: ^3.0.0-0 || ^2.6.0
+    dependencies:
+      chart.js: 3.8.0
+      vue: 3.2.37
+    dev: false
 
   /vue-demi/0.13.5_vue@3.2.37:
     resolution: {integrity: sha512-tO3K2bML3AwiHmVHeKCq6HLef2st4zBXIV5aEkoJl6HZ+gJWxWv2O8wLH8qrA3SX3lDoTDHNghLX1xZg83MXvw==}
